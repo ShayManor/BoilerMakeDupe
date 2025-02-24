@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Agents</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="bg-gray-800 p-4 text-center text-white text-2xl font-bold">All Agents</header>
+  <main class="p-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-y-auto h-screen">
+      <!-- Agent Cards -->
+      <script>
+        const agents = [
+          { name: "Social Media Manager", description: "Automates posts and engagements.", link: "http://192.168.1.1" },
+          { name: "Customer Support Bot", description: "Handles common customer inquiries.", link: "http://192.168.1.2" },
+          { name: "Inventory Tracker", description: "Monitors and updates stock levels.", link: "http://192.168.1.3" },
+          { name: "Email Assistant", description: "Automates responses and scheduling.", link: "http://192.168.1.4" },
+          { name: "Invoice Generator", description: "Creates and manages invoices.", link: "http://192.168.1.5" },
+          { name: "Market Trend Analyzer", description: "Provides insights into market trends.", link: "http://192.168.1.6" },
+          { name: "SEO Optimizer", description: "Improves website search ranking.", link: "http://192.168.1.7" },
+          { name: "Ad Performance Tracker", description: "Analyzes online ad performance.", link: "http://192.168.1.8" },
+          { name: "Legal Document Assistant", description: "Drafts business agreements.", link: "http://192.168.1.9" },
+          { name: "Tax Calculator", description: "Estimates business tax liabilities.", link: "http://192.168.1.10" },
+          { name: "HR Assistant", description: "Manages employee onboarding.", link: "http://192.168.1.11" },
+          { name: "Chatbot Trainer", description: "Customizes AI chatbots.", link: "http://192.168.1.12" },
+          { name: "Financial Forecaster", description: "Predicts financial trends.", link: "http://192.168.1.13" },
+          { name: "Task Automation Bot", description: "Automates repetitive workflows.", link: "http://192.168.1.14" },
+          { name: "Lead Generator", description: "Finds potential customers.", link: "http://192.168.1.15" },
+          { name: "Website Audit AI", description: "Analyzes website performance.", link: "http://192.168.1.16" },
+          { name: "Appointment Scheduler", description: "Manages client bookings.", link: "http://192.168.1.17" },
+          { name: "Product Recommendation AI", description: "Suggests products to customers.", link: "http://192.168.1.18" },
+          { name: "Survey Analyzer", description: "Processes customer feedback.", link: "http://192.168.1.19" },
+          { name: "Data Security Monitor", description: "Detects security threats.", link: "http://192.168.1.20" }
+        ];
+
+        document.write(
+          agents.map(agent => `
+            <a href="${agent.link}" class="block bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition">
+              <h2 class="text-xl font-bold">${agent.name}</h2>
+              <p class="mt-2 text-gray-400">${agent.description}</p>
+            </a>
+          `).join('')
+        );
+      </script>
+    </div>
+  </main>
+</body>
+</html>
