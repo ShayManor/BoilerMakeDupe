@@ -2,11 +2,6 @@ import os
 from openai import OpenAI
 from pymongo import MongoClient
 
-# Environment variables and configuration
-MONGO_URI = os.environ.get(
-    'MONGO_URI',
-    'mongodb+srv://trueflash42:dOKpvn6cqAyK7RHb@agent.ctwv3.mongodb.net/boilermake25?retryWrites=true&w=majority&appName=Agent'
-)
 QUESTION_ASKER_ID = "asst_TlqR8FmQyvlUwkosUpu9Alk5"
 conversation_data = {}
 
